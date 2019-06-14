@@ -2,7 +2,7 @@ package com.design.patterns.strategy.investimentos;
 
 import java.util.Random;
 
-import com.design.patterns.Conta;
+import com.design.patterns.strategy.Conta;
 
 public class Arrojado implements Investimento {
 	

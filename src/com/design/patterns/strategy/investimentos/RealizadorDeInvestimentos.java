@@ -1,6 +1,6 @@
 package com.design.patterns.strategy.investimentos;
 
-import com.design.patterns.Conta;
+import com.design.patterns.strategy.Conta;
 
 public class RealizadorDeInvestimentos {
 	

@@ -1,7 +1,6 @@
 package com.design.patterns.chainOfResponsibility.web;
 
-import com.design.patterns.Conta;
-import com.design.patterns.Requisicao;
+import com.design.patterns.strategy.Conta;
 
 public class RespostaEmXML implements Resposta {
 	

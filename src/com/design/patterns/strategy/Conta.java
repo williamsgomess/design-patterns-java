@@ -1,9 +1,11 @@
-package com.design.patterns;
+package com.design.patterns.strategy;
 
 public class Conta {
 
 	private String titular;
 	private double saldo;
+	private int numero;
+	private int agencia;
 	
 	public Conta() {
 	}
@@ -23,6 +25,14 @@ public class Conta {
 	
 	public double getSaldo() {
 		return saldo;
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
+	
+	public int getAgencia() {
+		return agencia;
 	}
 	
 }

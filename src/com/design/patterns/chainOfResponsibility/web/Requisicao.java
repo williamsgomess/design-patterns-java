@@ -1,6 +1,4 @@
-package com.design.patterns;
-
-import com.design.patterns.chainOfResponsibility.web.Formato;
+package com.design.patterns.chainOfResponsibility.web;
 
 public class Requisicao {
 	
