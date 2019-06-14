@@ -1,5 +1,7 @@
 package com.design.patterns.strategy.investimentos;
 
+import com.design.patterns.Conta;
+
 public class RealizadorDeInvestimentos {
 	
 	public void realiza(Conta conta, Investimento investimento) {

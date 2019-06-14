@@ -1,5 +1,7 @@
 package com.design.patterns.strategy.impostos;
 
+import com.design.patterns.Orcamento;
+
 public class CalculadorDeImpostos {
 
 	public void calcula(Orcamento orcamento, Imposto imposto) {
