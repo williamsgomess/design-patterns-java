@@ -2,7 +2,7 @@ package com.design.patterns.strategy.impostos;
 
 import com.design.patterns.Orcamento;
 
-public class ICCC implements Imposto {
+public class ICCC extends Imposto {
 
 	@Override
 	public double calcula(Orcamento orcamento) {

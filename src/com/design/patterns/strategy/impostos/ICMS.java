@@ -2,11 +2,19 @@ package com.design.patterns.strategy.impostos;
 
 import com.design.patterns.Orcamento;
 
-public class ICMS implements Imposto {
+public class ICMS extends Imposto {
+	
+	public ICMS(Imposto imposto) {
+		super(imposto);
+	}
+	
+	public ICMS() {
+		super();
+	}
 
 	@Override
 	public double calcula(Orcamento orcamento) {
-		return orcamento.getValor() * 0.05 + 50;
+		return orcamento.getValor() * 0.1 + calculaOutroImposto(orcamento);
 	}
 
 }
