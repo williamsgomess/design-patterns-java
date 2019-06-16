@@ -1,25 +1,24 @@
-package com.design.patterns.strategy;
+package com.design.patterns.state.conta;
 
 import java.util.Calendar;
 
 public class Conta {
 
 	private String titular;
-	private double saldo;
+	protected double saldo;
 	private int numero;
 	private int agencia;
 	private Calendar dataAbertura;
+	protected EstadoDaConta estadoDaConta;
 	
 	public Conta() {
+		this.estadoDaConta = new Positivo();
 	}
 	
 	public Conta(String titular, double saldo) {
 		this.titular = titular;
 		this.saldo = saldo;
-	}
-	
-	public void deposita(double valor) {
-		this.saldo += valor;
+		this.estadoDaConta = new Positivo();
 	}
 	
 	public String getTitular() {
@@ -40,6 +39,14 @@ public class Conta {
 
 	public Calendar getDataAbertura() {
 		return dataAbertura;
+	}
+	
+	public void saca(double valor) {
+		this.estadoDaConta.saca(this, valor);
+	}
+	
+	public void deposita(double valor) {
+		this.estadoDaConta.deposita(this, valor);
 	}
 	
 }

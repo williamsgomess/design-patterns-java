@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import com.design.patterns.strategy.Conta;
+import com.design.patterns.state.conta.Conta;
 
 public class FiltroMesmoMes extends Filtro {
 

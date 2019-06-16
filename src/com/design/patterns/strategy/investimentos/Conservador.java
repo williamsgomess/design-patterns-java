@@ -1,6 +1,6 @@
 package com.design.patterns.strategy.investimentos;
 
-import com.design.patterns.strategy.Conta;
+import com.design.patterns.state.conta.Conta;
 
 public class Conservador implements Investimento {
 

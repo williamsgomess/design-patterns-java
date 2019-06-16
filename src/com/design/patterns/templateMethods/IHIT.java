@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.design.patterns.Item;
-import com.design.patterns.Orcamento;
+import com.design.patterns.state.orcamento.Orcamento;
 
 public class IHIT extends TemplateDeImpostoCondicional {
 

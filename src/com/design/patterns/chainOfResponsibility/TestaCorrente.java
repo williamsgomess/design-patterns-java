@@ -1,7 +1,7 @@
 package com.design.patterns.chainOfResponsibility;
 
 import com.design.patterns.Item;
-import com.design.patterns.Orcamento;
+import com.design.patterns.state.orcamento.Orcamento;
 
 public class TestaCorrente {
 	

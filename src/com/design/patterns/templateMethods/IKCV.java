@@ -1,7 +1,7 @@
 package com.design.patterns.templateMethods;
 
 import com.design.patterns.Item;
-import com.design.patterns.Orcamento;
+import com.design.patterns.state.orcamento.Orcamento;
 import com.design.patterns.strategy.impostos.Imposto;
 
 public class IKCV extends TemplateDeImpostoCondicional {

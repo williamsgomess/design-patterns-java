@@ -3,7 +3,7 @@ package com.design.patterns.decorator;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.design.patterns.strategy.Conta;
+import com.design.patterns.state.conta.Conta;
 
 public class FiltroMenorQue100Reais extends Filtro {
 

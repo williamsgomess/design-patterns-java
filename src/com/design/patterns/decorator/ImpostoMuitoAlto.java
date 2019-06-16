@@ -1,6 +1,6 @@
 package com.design.patterns.decorator;
 
-import com.design.patterns.Orcamento;
+import com.design.patterns.state.orcamento.Orcamento;
 import com.design.patterns.strategy.impostos.Imposto;
 
 public class ImpostoMuitoAlto extends Imposto {

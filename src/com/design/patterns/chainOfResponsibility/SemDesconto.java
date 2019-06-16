@@ -1,6 +1,6 @@
 package com.design.patterns.chainOfResponsibility;
 
-import com.design.patterns.Orcamento;
+import com.design.patterns.state.orcamento.Orcamento;
 
 public class SemDesconto implements Desconto {
 

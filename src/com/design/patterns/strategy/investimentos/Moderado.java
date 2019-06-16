@@ -2,7 +2,7 @@ package com.design.patterns.strategy.investimentos;
 
 import java.util.Random;
 
-import com.design.patterns.strategy.Conta;
+import com.design.patterns.state.conta.Conta;
 
 public class Moderado implements Investimento {
 	
