@@ -2,13 +2,12 @@ package com.design.patterns.decorator;
 
 import com.design.patterns.Orcamento;
 import com.design.patterns.strategy.impostos.ICMS;
-import com.design.patterns.strategy.impostos.ISS;
 import com.design.patterns.strategy.impostos.Imposto;
 
 public class TesteDeImpostoComposto {
 	
 	public static void main(String[] args) {
-		Imposto imposto = new ISS(new ICMS());
+		Imposto imposto = new ImpostoMuitoAlto(new ICMS());
 		
 		Orcamento orcamento = new Orcamento(500.0);
 		

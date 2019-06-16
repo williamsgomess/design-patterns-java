@@ -1,8 +1,13 @@
 package com.design.patterns.templateMethods;
 
 import com.design.patterns.Orcamento;
+import com.design.patterns.strategy.impostos.Imposto;
 
 public class ICPP extends TemplateDeImpostoCondicional{
+	
+	public ICPP(Imposto outroImposto) {
+		super(outroImposto);
+	}
 
 	@Override
 	protected double minimaTaxacao(Orcamento orcamento) {

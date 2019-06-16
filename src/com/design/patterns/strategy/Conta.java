@@ -1,11 +1,14 @@
 package com.design.patterns.strategy;
 
+import java.util.Calendar;
+
 public class Conta {
 
 	private String titular;
 	private double saldo;
 	private int numero;
 	private int agencia;
+	private Calendar dataAbertura;
 	
 	public Conta() {
 	}
@@ -33,6 +36,10 @@ public class Conta {
 	
 	public int getAgencia() {
 		return agencia;
+	}
+
+	public Calendar getDataAbertura() {
+		return dataAbertura;
 	}
 	
 }

@@ -4,6 +4,14 @@ import com.design.patterns.Orcamento;
 import com.design.patterns.strategy.impostos.Imposto;
 
 public abstract class TemplateDeImpostoCondicional extends Imposto {
+	
+	public TemplateDeImpostoCondicional(Imposto outroImposto) {
+		super(outroImposto);
+	}
+	
+	public TemplateDeImpostoCondicional() {
+		super();
+	}
 
 	@Override
 	public final double calcula(Orcamento orcamento) {
