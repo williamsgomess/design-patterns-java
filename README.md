@@ -1,2 +1,2 @@
-# designe-patterns-java
+# design-patterns-java
 Códigos dos cursos de design patterns java
