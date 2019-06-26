@@ -1,5 +1,7 @@
 package com.design.patterns.interpreter;
 
+import com.design.patterns.visitor.Visitor;
+
 public class Numero implements Expressao {
 	
 	private int numero;
@@ -15,6 +17,11 @@ public class Numero implements Expressao {
 	@Override
 	public int avalia() {
 		return numero;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		visitor.visitaNumero(this);
 	}
 	
 }

@@ -1,5 +1,7 @@
 package com.design.patterns.interpreter;
 
+import com.design.patterns.visitor.Visitor;
+
 public class Divisao implements Expressao {
 	
 	private Expressao esquerda;
@@ -23,6 +25,12 @@ public class Divisao implements Expressao {
 		int resultadoDaEsquerda = esquerda.avalia();
 		int resultadoDaDireita = direita.avalia();
 		return resultadoDaEsquerda / resultadoDaDireita;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

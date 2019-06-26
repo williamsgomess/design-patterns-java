@@ -1,5 +1,7 @@
 package com.design.patterns.interpreter;
 
+import com.design.patterns.visitor.Visitor;
+
 public class Soma implements Expressao {
 	
 	private Expressao direita;
@@ -23,6 +25,11 @@ public class Soma implements Expressao {
 		int resultadoDaEsquerda = esquerda.avalia();
 		int resultadoDaDireita = direita.avalia();
 		return resultadoDaEsquerda + resultadoDaDireita;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		visitor.visitaSoma(this);
 	}
 
 }
